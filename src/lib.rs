@@ -26,6 +26,8 @@ pub mod macros;
 
 pub mod access;
 pub mod array;
+#[cfg(feature = "borsh")]
+mod borsh;
 pub mod boxed;
 pub mod domain;
 pub mod field;

@@ -47,6 +47,7 @@ atomic = [
 # users will need to opt out with `default-features = false`.
 default = [
 	"atomic",
+	"borsh", # for testing, remove me
 	"std",
 ]
 # The standard library includes the allocator.
@@ -69,6 +70,11 @@ default-features = false
 optional = true
 version = "1"
 
+[dependencies.borsh]
+default-features = false
+optional = true
+version = "1.2.0"
+
 [dependencies.wyz]
 version = "0.5"
 default-features = false
@@ -90,6 +96,7 @@ static_assertions = "1"
 [package.metadata.docs.rs]
 features = [
 	"atomic",
+	"borsh",
 	"serde",
 	"std",
 ]

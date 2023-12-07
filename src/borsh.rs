@@ -122,7 +122,6 @@ where
 	T: crate::store::BitStore,
 	O: crate::order::BitOrder,
 	T: borsh::BorshDeserialize,
-	crate::slice::BitSlice<T, O>: borsh::BorshDeserialize,
 {
 	#[inline]
 	fn deserialize_reader<R: borsh::io::Read>(
